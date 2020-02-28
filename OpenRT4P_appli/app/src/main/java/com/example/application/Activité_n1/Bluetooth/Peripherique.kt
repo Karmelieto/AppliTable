@@ -162,7 +162,7 @@ class Peripherique(device: BluetoothDevice?, handler: Handler?) {
             when {
                 tableauDonnees[0] == "fini" -> {
                     handlerUI = Handler(Looper.getMainLooper())
-                    handlerUI!!.post { Menu.pauseButton!!.setBackgroundResource(R.drawable.pause_icon) }
+                    handlerUI!!.post { Menu.pauseButton!!.setBackgroundResource(android.R.drawable.ic_media_pause) }
                     Menu.instructionAdapter!!.instructionList = null
                     handlerUI = Handler(Looper.getMainLooper())
                     handlerUI!!.post {
@@ -216,7 +216,7 @@ class Peripherique(device: BluetoothDevice?, handler: Handler?) {
                     handlerUI = Handler(Looper.getMainLooper())
                     handlerUI!!.post {
                         Menu.statusText!!.text = data //Affiche ce que la table envoie dans le text en bas du fragment Menu
-                        Menu.pauseButton!!.setBackgroundResource(R.drawable.pause_icon)
+                        Menu.pauseButton!!.setBackgroundResource(android.R.drawable.ic_media_pause)
                         Menu.instructionAdapter!!.notifyDataSetChanged()
                         Menu.orderAdapter!!.notifyDataSetChanged()
                     }

@@ -48,10 +48,10 @@ class Menu : androidx.fragment.app.Fragment() {
             pauseButton!!.visibility = View.VISIBLE
             pauseButton!!.setOnClickListener {
                 val data = "-1,3" //id commande pas utile mais necessaire
-                if (pauseButton!!.background.constantState == resources.getDrawable(R.drawable.pause_icon).constantState) {
-                    pauseButton!!.setBackgroundResource(R.drawable.play_icon)
+                if (pauseButton!!.background.constantState == resources.getDrawable(android.R.drawable.ic_media_pause).constantState) {
+                    pauseButton!!.setBackgroundResource(android.R.drawable.ic_media_play)
                 } else {
-                    pauseButton!!.setBackgroundResource(R.drawable.pause_icon)
+                    pauseButton!!.setBackgroundResource(android.R.drawable.ic_media_pause)
                 }
                 peripherique!!.envoyer(data)
             }

@@ -41,7 +41,7 @@
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:layout_marginTop="8dp"
-        android:background="@drawable/pause_icon"
+        android:background="@android:drawable/ic_media_pause"
         android:visibility="visible"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
