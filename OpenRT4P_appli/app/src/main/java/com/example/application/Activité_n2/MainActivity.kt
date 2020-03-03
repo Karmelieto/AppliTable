@@ -70,6 +70,7 @@ class MainActivity : AppCompatActivity(), ChangeFragments {
 
         super.onStart()
     }
+
     companion object {
         var listener: ChangeFragments? = null
         var actionBars: ActionBar? = null
